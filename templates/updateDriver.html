@@ -1,0 +1,92 @@
+
+<div id="modalupdate{{row.driver_ID}}" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+  
+             <h4 class="modal-title">Update Driver Information</h4>
+          </div>
+          <div class="modal-body">
+  
+             <form action="{{url_for('updateDriver')}}" method="POST" enctype="multipart/form-data">
+  
+  
+                <div class="form-group">
+  
+                   <label>Driver ID:</label>
+                   <input type="text" class="form-control" name="driverid" value="{{row.driver_ID}}">
+                 </div>
+  
+                 <div class="form-group">
+  
+                   <label>Driver Name:</label>
+                   <input type="text" class="form-control" name="driverName" value="{{row.driver_Name}}">
+
+                 </div>
+  
+                 <div class="form-group">
+
+                   <label>Phone Number:</label>
+                   <input type="text" class="form-control" name="phoneNumber" value="{{row.phone_number}}">
+
+                 </div>
+
+                 <div class="form-group">
+
+                    <label>Vehicle Number:</label>
+                    <input type="text" class="form-control" name="vehicleNumber" value="{{row.vehicle_number}}">
+ 
+                  </div>
+
+                  <div class="form-group">
+
+                    <label>Status:</label>
+                    <input type="text" class="form-control" name="status" value="{{row.driver_status}}">
+ 
+                  </div>
+                  <!--
+                  <div class="form-group">
+
+                     <label>Driver Photo:</label>
+                     <input type="file" class="form-control" name="driverPhoto" value={{row.driver_photo}}>
+  
+                   </div>
+                   -->
+                <div class="form-group">
+  
+  
+                   <button class="btn btn-primary" type="submit">Update Driver</button>
+  
+  
+                </div>
+  
+  
+             </form>
+  
+  
+          </div>
+  
+  
+          <div class="modal-footer">
+  
+  
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+  
+          </div>
+  
+  
+       </div>
+  
+  
+    </div>
+  
+  
+ </div>
+  
+
+
+
+
+<!-- Specific Page JS goes HERE  -->
+

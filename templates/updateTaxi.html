@@ -1,0 +1,76 @@
+
+<div id="modalupdate_Taxi{{row.vehicle_number}}" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+ 
+            <h4 class="modal-title">Update Taxi Information</h4>
+         </div>
+         <div class="modal-body">
+ 
+           <form action="{{url_for('updateTaxi')}}" method="POST" enctype="multipart/form-data">
+
+
+              <div class="form-group">
+
+                 <label>Vehicle Number:</label>
+                 <input type="text" class="form-control" name="vehicleNumber" value={{row.vehicle_number}}>
+               </div>
+
+               <div class="form-group">
+
+                 <label>Number Plate:</label>
+                 <input type="text" class="form-control" name="numberPlate" value={{row.number_plate}}>
+
+               </div>
+
+               <div class="form-group">
+
+                 <label>Vehicle Color:</label>
+                 <input type="text" class="form-control" name="color" value={{row.color}}>
+
+               </div>
+
+               <div class="form-group">
+
+                  <label>Model Type:</label>
+                  <input type="text" class="form-control" name="model" value={{row.model}}>
+
+                </div>
+
+                <div class="form-group">
+
+               <!-- <label>Taxi Photo:</label>
+                  <input type="file" class="form-control" name="taxiPhoto" value={{row.taxi_photo}}>
+                -->
+                </div>
+
+              <div class="form-group">
+
+                 <button class="btn btn-primary" type="submit">Update Taxi</button>
+
+              </div>
+           </form>
+
+ 
+         </div>
+ 
+ 
+         <div class="modal-footer">
+ 
+ 
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+ 
+ 
+         </div>
+ 
+ 
+      </div>
+ 
+ 
+   </div>
+ 
+ 
+</div>
+ 
+

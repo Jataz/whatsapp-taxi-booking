@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>
+      Taxi Booking Admin Panel- {% block title %}{% endblock %} | AppSeed
+    </title>
+
+    <style>
+      #loader {
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        z-index: 90000;
+      }
+
+      #loader.fadeOut {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        background-color: #333;
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+      }
+      #harareMap{
+        width: 1050px;
+        height: 700px;
+      }
+      @-webkit-keyframes sk-scaleout {
+        0% { -webkit-transform: scale(0) }
+        100% {
+          -webkit-transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+    </style>
+    <script type = "text/JavaScript">
+      <!--
+         function AutoRefresh( t ) {
+            setTimeout("location.reload(true);", t);
+         }
+      //-->
+   </script>
+    <link href="/static/assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <!-- Specific Page CSS goes HERE -->
+    {% block stylesheets %}
+    
+    
+    {% endblock stylesheets %}
+
+  </head>
+  <body class="app" onload = "JavaScript:AutoRefresh(300000);">
+
+
+    <!-- @App Content -->
+    <!-- =================================================== -->
+    <div>
+
+      {% include 'includes/sidebar.html' %}
+
+      <!-- #Main ============================ -->
+      <div class="page-container">
+
+        {% include 'includes/navigation.html' %}
+
+        <!-- ### $App Screen Content ### -->
+        <main class="main-content bgc-grey-100">
+          <div id="mainContent">
+
+            {% block content %}{% endblock content %}  
+          
+          </div>
+        </main>
+
+        {% include 'includes/footer.html' %}
+
+    </div>
+    <script>
+      const btnDelete= document.querySelectorAll('.btn-delete');
+      if(btnDelete) {
+        const btnArray = Array.from(btnDelete);
+        btnArray.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            if(!confirm('Are you sure you want to delete it?')){
+              e.preventDefault();
+            }
+          });
+        })
+      }
+       
+      $(document).ready(function() {
+          $('#example').DataTable({     
+            "aLengthMenu": [[3, 5, 10, 25, -1], [3, 5, 10, 25, "All"]],
+              "iDisplayLength": 3
+             } 
+          );
+      } );
+       
+      </script>
+    <script type="text/javascript" src="/static/assets/vendor.js"></script>
+    <script type="text/javascript" src="/static/assets/bundle.js"></script>
+    <script src="..\static\jquery-3.4.1.slim.min.js"></script>
+    <script src="..\static\npm\popper.js@1.16.0\dist\umd\popper.min.js" ></script>
+    <script src="..\static\bootstrap\4.4.1\js\bootstrap.min.js" ></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="..\static\map.js"></script>
+   
+    <!-- Specific Page JS goes HERE -->
+    {% block javascripts %}
+    
+    {% endblock javascripts %}
+
+  </body>
+
+</html>

@@ -1,0 +1,90 @@
+
+<div id="mymodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+  
+             <h4 class="modal-title">Add Driver</h4>
+          </div>
+          <div class="modal-body">
+  
+             <form action="{{url_for('add_Driver')}}" method="POST" enctype="multipart/form-data">
+  
+  
+                <div class="form-group">
+  
+                   <label>Driver ID:</label>
+                   <input type="text" class="form-control" name="driverid" required="1">
+                 </div>
+  
+                 <div class="form-group">
+  
+                   <label>Driver Name:</label>
+                   <input type="text" class="form-control" name="driverName" required="1">
+
+                 </div>
+  
+                 <div class="form-group">
+
+                   <label>Phone Number:</label>
+                   <input type="text" class="form-control" name="phoneNumber" required="1">
+
+                 </div>
+
+                 <div class="form-group">
+
+                    <label>Vehicle Number:</label>
+                    <input type="text" class="form-control" name="vehicleNumber" required="1">
+ 
+                  </div>
+
+                  <div class="form-group">
+
+                    <label>Status:</label>
+                    <select class="form-control" name="status" required="1">
+                     <option>free</option>
+                     <option>busy</option>
+                    
+                   </select>
+ 
+                  </div>
+                  <!--
+                  <div class="form-group">
+
+                     <label>Driver Photo:</label>
+                     <input type="file" class="form-control" name="driverPhoto" required="1">
+                     -->
+                   </div>
+  
+                <div class="form-group">
+  
+  
+                   <button class="btn btn-primary" type="submit">Add Driver</button>
+  
+  
+                </div>
+  
+  
+             </form>
+  
+  
+          </div>
+  
+  
+          <div class="modal-footer">
+  
+  
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+  
+          </div>
+  
+  
+       </div>
+  
+  
+    </div>
+  
+  
+ </div>
+  

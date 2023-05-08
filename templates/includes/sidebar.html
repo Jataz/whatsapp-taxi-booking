@@ -1,0 +1,88 @@
+
+      <!-- #Left Sidebar ==================== -->
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          <!-- ### $Sidebar Header ### -->
+          <div class="sidebar-logo">
+            <div class="peers ai-c fxw-nw">
+              <div class="peer peer-greed">
+                <a class="sidebar-link td-n" href="{{url_for('dashboard')}}">
+                  <div class="peers ai-c fxw-nw">
+                    <div class="peer">
+                      <div class="logo">
+                        <img src="/" alt="">
+                      </div>
+                    </div>
+                    <div class="peer peer-greed">
+                      <h5 class="lh-1 mB-0 logo-text">Panel</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="peer">
+                <div class="mobile-toggle sidebar-toggle">
+                  <a href="" class="td-n">
+                    <i class="ti-arrow-circle-left"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ### $Sidebar Menu ### -->
+          <ul class="sidebar-menu scrollable pos-r">
+            <li class="nav-item mT-30 actived">
+              <a class="sidebar-link" href="{{url_for('dashboard')}}">
+                <span class="icon-holder">
+                  <i class="c-blue-500 ti-home"></i>
+                </span>
+                <span class="title">Dashboard</span>
+              </a>
+              
+            </li>
+           
+            <li class="nav-item ">
+              <a class="sidebar-link" href="{{url_for('viewDrivers')}}">
+                <span class="icon-holder">
+                  <i class="c-orange-500 ti-layout-list-thumb"></i>
+                </span>
+                <span class="title">Drivers</span>
+              </a>
+            </li>
+           
+            <li class="nav-item ">
+              <a class="sidebar-link" href="{{url_for('viewTaxis')}}">
+                <span class="icon-holder">
+                  <i class="c-orange-500 ti-layout-list-thumb"></i>
+                </span>
+                <span class="title">Taxis</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="sidebar-link" href="{{url_for('customersTable')}}">
+                <span class="icon-holder">
+                  <i class="c-orange-500 ti-layout-list-thumb"></i>
+                </span>
+                <span class="title">Customers</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="sidebar-link" href="{{url_for('viewUsers')}}">
+                <span class="icon-holder">
+                  <i class="c-orange-500 ti-layout-list-thumb"></i>
+                </span>
+                <span class="title"">Users</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="sidebar-link" href="{{url_for('logout')}}" >
+                <span class="icon-holder">
+                    <i class="ti-power-off mR-10"></i>
+                  </span>
+                <span class="title">Logout</span>
+              </a>
+            </li>            
+          </ul>
+        </div>
+      </div>

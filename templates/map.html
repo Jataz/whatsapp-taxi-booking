@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13e71c380582990a44b3a16b1fb490cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_13e71c380582990a44b3a16b1fb490cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_13e71c380582990a44b3a16b1fb490cc = L.map(
+                "map_13e71c380582990a44b3a16b1fb490cc",
+                {
+                    center: [-17.821817324977584, 31.050666330068275],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6ba487d120bf6bd9a8c6b9a895b41396 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+            var marker_3b36bf758029535ef37830349da13c94 = L.marker(
+                [-17.836826157213498, 31.036866085965986],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_4cd4f8f3ad7642311ee240d6d4ab6066 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cadd60933bd491c8d75c0e348876c265 = $(`<div id="html_cadd60933bd491c8d75c0e348876c265" style="width: 100.0%; height: 100.0%;"><strong>TRANSERV</strong></div>`)[0];
+                popup_4cd4f8f3ad7642311ee240d6d4ab6066.setContent(html_cadd60933bd491c8d75c0e348876c265);
+            
+        
+
+        marker_3b36bf758029535ef37830349da13c94.bindPopup(popup_4cd4f8f3ad7642311ee240d6d4ab6066)
+        ;
+
+        
+    
+    
+            marker_3b36bf758029535ef37830349da13c94.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dfe15a1c0292fb0e9496881b9f209c2 = L.marker(
+                [-17.836274647348493, 31.030793564630603],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_f51ea82095073968bb2a5b9f743277d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_510c69226003fa07d28f4e2627eeb6c4 = $(`<div id="html_510c69226003fa07d28f4e2627eeb6c4" style="width: 100.0%; height: 100.0%;"><strong>ZUPCO GARAGE</strong></div>`)[0];
+                popup_f51ea82095073968bb2a5b9f743277d3.setContent(html_510c69226003fa07d28f4e2627eeb6c4);
+            
+        
+
+        marker_2dfe15a1c0292fb0e9496881b9f209c2.bindPopup(popup_f51ea82095073968bb2a5b9f743277d3)
+        ;
+
+        
+    
+    
+            marker_2dfe15a1c0292fb0e9496881b9f209c2.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a668da70c581e2de8b0b326176dcf721 = L.marker(
+                [-17.837490009415035, 31.027832405816874],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_7b39e7917aebf99036646ffce3cf6673 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca48013364e15ee48accbe18ae552949 = $(`<div id="html_ca48013364e15ee48accbe18ae552949" style="width: 100.0%; height: 100.0%;"><strong>BISHOP GAU AVE</strong></div>`)[0];
+                popup_7b39e7917aebf99036646ffce3cf6673.setContent(html_ca48013364e15ee48accbe18ae552949);
+            
+        
+
+        marker_a668da70c581e2de8b0b326176dcf721.bindPopup(popup_7b39e7917aebf99036646ffce3cf6673)
+        ;
+
+        
+    
+    
+            marker_a668da70c581e2de8b0b326176dcf721.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c438c086fdac07f823ceb573d8c51f07 = L.marker(
+                [-17.836254221020774, 31.02282203933199],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_19c8b5870d9fcef3136d5623ad9dbc4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17cad0362f0136a31c52e7c9babfcbcf = $(`<div id="html_17cad0362f0136a31c52e7c9babfcbcf" style="width: 100.0%; height: 100.0%;"><strong>CHOPPIES BIG MALL</strong></div>`)[0];
+                popup_19c8b5870d9fcef3136d5623ad9dbc4e.setContent(html_17cad0362f0136a31c52e7c9babfcbcf);
+            
+        
+
+        marker_c438c086fdac07f823ceb573d8c51f07.bindPopup(popup_19c8b5870d9fcef3136d5623ad9dbc4e)
+        ;
+
+        
+    
+    
+            marker_c438c086fdac07f823ceb573d8c51f07.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69b440e999bec71d71da47e073c07c4a = L.marker(
+                [-17.835539298213977, 31.019882338397764],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_cac3cc592aac617b6b2a8fc7f2473183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f13dd9b164631756a355ed2db0f0808e = $(`<div id="html_f13dd9b164631756a355ed2db0f0808e" style="width: 100.0%; height: 100.0%;"><strong>GANGES ROAD</strong></div>`)[0];
+                popup_cac3cc592aac617b6b2a8fc7f2473183.setContent(html_f13dd9b164631756a355ed2db0f0808e);
+            
+        
+
+        marker_69b440e999bec71d71da47e073c07c4a.bindPopup(popup_cac3cc592aac617b6b2a8fc7f2473183)
+        ;
+
+        
+    
+    
+            marker_69b440e999bec71d71da47e073c07c4a.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfafbb86843bdde4b9d81768adaa4a3e = L.marker(
+                [-17.838746215288378, 31.013670342222685],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_362841adbb84132f89e9be144145c0a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0070228facaa51b0e9bf22e71314546c = $(`<div id="html_0070228facaa51b0e9bf22e71314546c" style="width: 100.0%; height: 100.0%;"><strong>GANGES ROAD</strong></div>`)[0];
+                popup_362841adbb84132f89e9be144145c0a8.setContent(html_0070228facaa51b0e9bf22e71314546c);
+            
+        
+
+        marker_bfafbb86843bdde4b9d81768adaa4a3e.bindPopup(popup_362841adbb84132f89e9be144145c0a8)
+        ;
+
+        
+    
+    
+            marker_bfafbb86843bdde4b9d81768adaa4a3e.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_200d9835657c6f0f2607dadcb7002b0b = L.marker(
+                [-17.83996156052486, 31.008284466485048],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_57d3603cf348b0f4561f8c774c3438d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_369ac811f7f797a379c1f6f0711821c8 = $(`<div id="html_369ac811f7f797a379c1f6f0711821c8" style="width: 100.0%; height: 100.0%;"><strong>HIT</strong></div>`)[0];
+                popup_57d3603cf348b0f4561f8c774c3438d9.setContent(html_369ac811f7f797a379c1f6f0711821c8);
+            
+        
+
+        marker_200d9835657c6f0f2607dadcb7002b0b.bindPopup(popup_57d3603cf348b0f4561f8c774c3438d9)
+        ;
+
+        
+    
+    
+            marker_200d9835657c6f0f2607dadcb7002b0b.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93fa940be89dd9c3bd9ab75d6c1f8a05 = L.marker(
+                [-17.833626443125766, 31.018526778543766],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_37e1edcef4d1ebfb0ac279c1c5514eaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc08bcafbb3bb13a7c4a1158d83118a8 = $(`<div id="html_cc08bcafbb3bb13a7c4a1158d83118a8" style="width: 100.0%; height: 100.0%;"><strong>CHRIST MINISTRIES CHURCH</strong></div>`)[0];
+                popup_37e1edcef4d1ebfb0ac279c1c5514eaa.setContent(html_cc08bcafbb3bb13a7c4a1158d83118a8);
+            
+        
+
+        marker_93fa940be89dd9c3bd9ab75d6c1f8a05.bindPopup(popup_37e1edcef4d1ebfb0ac279c1c5514eaa)
+        ;
+
+        
+    
+    
+            marker_93fa940be89dd9c3bd9ab75d6c1f8a05.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b18229ed1b5b32aae2ac248bf469291 = L.marker(
+                [-17.831762503650495, 31.015345678665767],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_5f8d1ff4458c7c93753a70b18fe1b236 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec8a77f738c07164880b0bfba63a9312 = $(`<div id="html_ec8a77f738c07164880b0bfba63a9312" style="width: 100.0%; height: 100.0%;"><strong>BLAKEWAY DRIVE</strong></div>`)[0];
+                popup_5f8d1ff4458c7c93753a70b18fe1b236.setContent(html_ec8a77f738c07164880b0bfba63a9312);
+            
+        
+
+        marker_9b18229ed1b5b32aae2ac248bf469291.bindPopup(popup_5f8d1ff4458c7c93753a70b18fe1b236)
+        ;
+
+        
+    
+    
+            marker_9b18229ed1b5b32aae2ac248bf469291.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2888b38f6d7f1404c6920b3cf45a837a = L.marker(
+                [-17.83394816219555, 31.009814963684946],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_5c2c7b818265724a43edc570be64a30e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f73698f2d8cdfb86d248f1674b82644 = $(`<div id="html_5f73698f2d8cdfb86d248f1674b82644" style="width: 100.0%; height: 100.0%;"><strong>LAWLEY AVE</strong></div>`)[0];
+                popup_5c2c7b818265724a43edc570be64a30e.setContent(html_5f73698f2d8cdfb86d248f1674b82644);
+            
+        
+
+        marker_2888b38f6d7f1404c6920b3cf45a837a.bindPopup(popup_5c2c7b818265724a43edc570be64a30e)
+        ;
+
+        
+    
+    
+            marker_2888b38f6d7f1404c6920b3cf45a837a.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2fac2650514aa8a2832f40c02b0d5d6 = L.marker(
+                [-17.836364866766576, 31.00710056813469],
+                {}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+        var popup_f2b72faf8b0b734a19bbfcac05e6faa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7b8e6c81aa68af2adeacacf33ee2781 = $(`<div id="html_d7b8e6c81aa68af2adeacacf33ee2781" style="width: 100.0%; height: 100.0%;"><strong>HIT</strong></div>`)[0];
+                popup_f2b72faf8b0b734a19bbfcac05e6faa1.setContent(html_d7b8e6c81aa68af2adeacacf33ee2781);
+            
+        
+
+        marker_b2fac2650514aa8a2832f40c02b0d5d6.bindPopup(popup_f2b72faf8b0b734a19bbfcac05e6faa1)
+        ;
+
+        
+    
+    
+            marker_b2fac2650514aa8a2832f40c02b0d5d6.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9342dbedcce6dcdd9d3256d3a85f9801 = L.polyline(
+                [[-17.833864324904955, 31.038711445690076], [-17.836611681332055, 31.037402527663726], [-17.836560615636404, 31.03687681472079], [-17.836264434183278, 31.03241361882764], [-17.836274647348493, 31.030793564630603], [-17.83552908498641, 31.02929152758492], [-17.837632992627796, 31.028229372793042], [-17.837490009415035, 31.027832405816874], [-17.836254221020774, 31.02282203933199], [-17.835539298213977, 31.019882338397764], [-17.836540189360473, 31.019657032829194], [-17.837326599883895, 31.019152777523953], [-17.838746215288378, 31.013670342222685], [-17.839236439599656, 31.01150311736953], [-17.83996156052486, 31.008284466485048]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+    
+            var poly_line_aa60bbc1bedcf9e9c607054ed231c07f = L.polyline(
+                [[-17.835539298213977, 31.019882338397764], [-17.83476011732957, 31.018972025296527], [-17.834045188456006, 31.018564329473865], [-17.833534523257452, 31.018542871801873], [-17.83271745589416, 31.018650160161823], [-17.83234466766984, 31.01747535262206], [-17.831762503650495, 31.015345678665767], [-17.832559148655513, 31.014911160795485], [-17.833223016766237, 31.01428888830692], [-17.833830709253633, 31.013312564227576], [-17.834009441951046, 31.0114779332655], [-17.83394816219555, 31.009814963684946], [-17.835066514508846, 31.00975059065261], [-17.835168646772193, 31.008870826107668], [-17.835949956785015, 31.007755027152417], [-17.836364866766576, 31.00710056813469]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_13e71c380582990a44b3a16b1fb490cc);
+        
+</script>
+</html>

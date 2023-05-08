@@ -1,0 +1,109 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="row gap-20 masonry pos-r">
+      <div class="masonry-sizer col-md-6"></div>
+      <div class="masonry-item w-100">
+        <div class="row gap-20">
+          <!-- #Toatl Drivers ==================== -->
+          <div class="col-md-3">
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Total Drivers</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">{{td}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- #Total Taxis ==================== -->
+          <div class="col-md-3">
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Total Taxis</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash2"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-red-50 c-red-500">{{tt}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- #Total Customers ==================== -->
+          <div class="col-md-3">
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Total Customers</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash3"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-purple-50 c-purple-500">{{tc}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- #Total users ==================== -->
+          <div class="col-md-3">
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Total Users</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash4"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">{{tu}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masonry-item col-12">
+        <!-- #Site Visits ==================== -->
+        <div class="bd bgc-white">
+          <div class="peers fxw-nw@lg+ ai-s">
+            <div class="peer peer-greed w-70p@lg+ w-100@lg- p-20">
+              <div class="layers">
+                <div class="layer w-100 mB-10">
+                  <h6 class="lh-1">Routes</h6>
+                </div>
+                <div class="layer w-100">
+                  <iframe class="map", src="/map" width="1100" height="500"></iframe>
+                </div>
+              </div>
+            </div>
+        
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
